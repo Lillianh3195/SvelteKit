@@ -2,11 +2,9 @@
   import CreateProject from '$lib/components/CreateProject.svelte';
 </script>
 
-<h1>Volunteer Website</h1>
+<h1>Home Page!</h1>
 <p>Hello! Welcome to our Volunteer Website!</p>
-<div>
-<CreateProject />
-</div>
+
 
 <style>
 h1 {

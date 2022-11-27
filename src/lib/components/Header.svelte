@@ -14,6 +14,9 @@
 			<li>
 				<a href="/register">Register</a>
 			</li>
+      <li>
+				<a href="/create">Create</a>
+			</li>
 		</ul>
     </nav>
 </header>

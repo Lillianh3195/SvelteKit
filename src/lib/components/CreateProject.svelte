@@ -1,5 +1,9 @@
 <script>
+	import Hidden from './Hidden.svelte';
 	let visible = false;
+	let shown;
+	let show;
+
 	function handleClick() {
 		if (visible) {
 			visible = false;
@@ -16,13 +20,20 @@
 {#if visible}
 	<div>
 		<br> <br>
-		<label for="title">Title:</label>
+		<label for="title" required>Title:</label>
 		<input type="text" id="title"> <br> <br>
 		<label for="requirements">Requirements:</label>
 		<input type="text" id="requirements"> <br> <br>
 		<label for="goal">Goal:</label>
 		<input type="text" id="goal"> <br> <br>
-		<label for="ProjectForm">Project Description: </label> <br>
+		<button on:click={show}>Set Location</button> <br> <br>
+		<Hidden bind:shown bind:show> 
+			<div>
+				<label for="location">Location:</label>
+				<input type="text" id="location"> <br> <br>
+			</div>
+		</Hidden>
+		<label for="ProjectForm" required>Project Description: </label> <br>
 		<textarea id="ProjectForm" name="ProjectDescription" rows="4" cols="50">Enter project description here...</textarea>
 	</div>
 

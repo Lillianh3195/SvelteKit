@@ -26,6 +26,8 @@
 		<input type="text" id="requirements"> <br> <br>
 		<label for="goal">Goal:</label>
 		<input type="text" id="goal"> <br> <br>
+		<label for="meeting-time">Time:</label>
+		<input type="datetime-local" id="meeting-time"> <br> <br>
 		<button on:click={show}>Set Location</button> <br> <br>
 		<Hidden bind:shown bind:show> 
 			<div>

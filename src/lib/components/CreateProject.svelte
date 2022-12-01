@@ -31,7 +31,7 @@
 		<input type="datetime-local" id="meeting-time"> <br> <br>
 		<button on:click={show}>Set Location</button> <br> <br>
 		<Hidden bind:shown bind:show> 
-			<form action="https://www.google.com/maps/search/" method="GET">
+			<form action="https://www.google.com/maps/search/" method="GET" target="_blank">
 				<div>
 					<input type="hidden" name="api" value="1"/> <br> <br>
 					<label for="location">Location:</label> 	

@@ -4,6 +4,7 @@
 	let shown;
 	let show;
 
+
 	function handleClick() {
 		if (visible) {
 			visible = false;
@@ -30,10 +31,14 @@
 		<input type="datetime-local" id="meeting-time"> <br> <br>
 		<button on:click={show}>Set Location</button> <br> <br>
 		<Hidden bind:shown bind:show> 
-			<div>
-				<label for="location">Location:</label>
-				<input type="text" id="location"> <br> <br>
-			</div>
+			<form action="https://www.google.com/maps/search/" method="GET">
+				<div>
+					<input type="hidden" name="api" value="1"/> <br> <br>
+					<label for="location">Location:</label> 	
+					<input type="text" name="query" /> 
+					<input type="submit" name="loadURL" id="loadURL" value="Submit" /> <br> <br>				
+				</div>				  
+			</form>
 		</Hidden>
 		<label for="ProjectForm" required>Project Description: </label> <br>
 		<textarea id="ProjectForm" name="ProjectDescription" rows="4" cols="50">Enter project description here...</textarea>

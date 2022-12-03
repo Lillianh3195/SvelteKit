@@ -17,6 +17,9 @@
       <li>
 				<a href="/create">Create</a>
 			</li>
+      <li>
+				<a href="/ProjectsPage">Volunteer</a>
+			</li>
 		</ul>
     </nav>
 </header>
